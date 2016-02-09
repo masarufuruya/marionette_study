@@ -2,20 +2,17 @@
   <head>
     <meta charset="utf-8">
     <link rel='stylesheet' href='./css/style.css' type='text/css'>
-
     <script data-main='src/app' src='lib/require.js'></script>
   </head>
   <body>
     <h3>UI要素のクリックイベントサンプル</h3>
     <ul id='tabs'>
-      <li>
-        <a href='#mypage'>マイページ</a>
-      </li>
-      <li>
-        <a href='#account'>アカウント編集</a>
-      </li>
+      <!--underscoreテンプレート -->
+      <script type="text/template" id="tab">
+        <a href="<%= href %>">
+          <%= tabName %>
+        </a>
+      </script>
     </ul>
-    <script src='node_modules/jquery/dist/jquery.js'></script>
-    <script src='src/tab.js'></script>
   </body>
 </html>
